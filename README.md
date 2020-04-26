@@ -5,6 +5,7 @@ ASP.NET
 #### Решал через Web forms:
 #### Создал две формы Default и Open
 ### Разметка Default.aspx:
+```
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="image.Upload" %>
 
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ ASP.NET
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+<title></title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -28,7 +29,11 @@ ASP.NET
     </form>
 </body>
 </html>
+```
+
+
 ### Программная часть Default.aspx.cs:
+```
 using System;
 using System.IO;
 
@@ -76,7 +81,9 @@ namespace image
         }
     }
 }
+```
 ### Разметка Open.aspx
+```
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Open.aspx.cs" Inherits="image.Open" %>
 
 <!DOCTYPE html>
@@ -98,7 +105,11 @@ namespace image
     </form>
 </body>
 </html>
+```
+
+
 ### Программная часть Open.aspx.cs:
+```
 using System;
 using System.IO;
 
@@ -126,3 +137,4 @@ namespace image
         }
     }
 }
+```
